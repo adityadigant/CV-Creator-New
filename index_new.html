@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_new.css">
+
+  <script src="script_new.js"></script>
+</head>
+
+<body onload="openCity(event, 'Resume'),showPosition()">
+
+
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
+    <button class="tablinks" onclick="openCity(event, 'Preview')">Preview</button>
+
+  </div>
+
+  <div id="Resume" class="tabcontent">
+    <form>
+
+
+
+
+      <div class="form__header">
+        <h1>Create Your Resume</h1>
+        <p>Please Enter All Required Fields </p>
+      </div>
+
+
+      <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+      </p>
+      <div id="pic_container"><img id="output"  /></div>
+      <p ><label id="picsum" for="file" style="cursor: pointer;">Upload Display Picture</label></p>
+      
+
+    
+
+
+      <h2>Personal Details</h2>
+
+
+
+      <div class="form-group">
+        <label for="name">Full Name <span>*</span></label>
+        <input type="text" name="name" id="name" placeholder="Your Name">
+        <div id="name__error" class="error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" placeholder="Street, City, Pin-Code" value="" >
+      </div>
+
+      
+    
+
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="number" name="phone" id="phone" placeholder="+91 XXXXXXXXXX">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email <span>*</span></label>
+        <input type="text" name="email" id="email" placeholder="xyz@mail.com">
+        <div id="email__error" class="error"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="about">About You</label>
+        <textarea name="about" id="about" placeholder="Write about yourself "></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="career">Career Objectives</label>
+        <textarea name="career" id="career" placeholder="What you wish to accomplish in your career"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="education">Education</label>
+        <textarea name="education" id="education" placeholder="1) University, Degree, Year, Marks"></textarea>
+      </div>
+
+      <div class="line-break"></div>
+
+      <h2>Work Experience</h2>
+
+      <h3>Recent Job</h3>
+
+      <div class="form-date-group">
+        <div class="form-group">
+          <label for="job-1__start">Start Date</label>
+          <input type="date" name="job-1__start" id="job-1__start">
+        </div>
+        <div class="form-group">
+          <label for="job-1__end">End Date</label>
+          <input type="date" name="job-1__end" id="job-1__end">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="job-1__details">Position Details</label>
+        <textarea name="job-1__details" id="job-1__details"></textarea>
+      </div>
+
+      <div class="line-break"></div>
+
+      <h3>Past Job</h3>
+
+      <div class="form-date-group">
+        <div class="form-group">
+          <label for="job-2__start">Start Date</label>
+          <input type="date" name="job-2__start" id="job-2__start">
+        </div>
+        <div class="form-group">
+          <label for="job-2__end">End Date</label>
+          <input type="date" name="job-2__end" id="job-2__end">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="job-2__details">Position Details</label>
+        <textarea name="job-2__details" id="job-2__details"></textarea>
+      </div>
+
+      <div class="line-break"></div>
+
+      <h3>Another Past Job</h3>
+
+      <div class="form-date-group">
+        <div class="form-group">
+          <label for="job-3__start">Start Date</label>
+          <input type="date" name="job-3__start" id="job-3__start">
+        </div>
+        <div class="form-group">
+          <label for="job-3__end">End Date</label>
+          <input type="date" name="job-3__end" id="job-3__end">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="job-3__details">Position Details</label>
+        <textarea name="job-3__details" id="job-3__details"></textarea>
+      </div>
+
+      <div class="line-break"></div>
+
+      <div class="form-group">
+        <label for="references">References</label>
+        <textarea name="references" id="references"></textarea>
+      </div>
+
+      <div class="line-break"></div>
+
+      <input type="submit" value="Create Resume" id="create-resume">
+    </form>
+
+  </div>
+
+  <div id="Preview" class="tabcontent">
+    <h3>Preview</h3>
+    <p>Preview is the capital of France.</p>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
