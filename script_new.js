@@ -10,6 +10,12 @@ function openCity(evt, cityName) {
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
+
+    n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("current_date").innerHTML = "<strong>Today's Date:</strong> "+d + "/" + m + "/" + y;
   }
 
   var loadFile = function(event) {
@@ -19,7 +25,7 @@ function openCity(evt, cityName) {
   };
 
 
-  function showPosition() {
+function showPosition() {
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             var positionInfo = "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude ;
@@ -33,7 +39,14 @@ function openCity(evt, cityName) {
 
 
 
+
+
 function createresume(){
+
+  document.getElementById("current_dateshow").innerHTML=
+  document.getElementById("current_date").innerHTML;
+
+
   document.getElementById("nameshow").innerHTML=
  document.getElementById("name").value;
 
