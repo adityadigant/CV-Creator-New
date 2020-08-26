@@ -42,9 +42,10 @@ body {font-family: Arial;}
   border: rgba(0, 0, 0, 0.9) 1px solid;
   width: 200px;
   height: 200px;
-  margin-left: 30px;
+  margin-left: 90px;
   margin-top: 30px;
   margin-bottom: 30px;
+  
 }
 #picsum{
   background: #000000;
@@ -60,7 +61,7 @@ body {font-family: Arial;}
   transition: 0.2s all;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.00), 0 1px 2px rgba(0, 0, 0, 0.00);
   width: 190px;
-  margin-left: 30px;
+  margin-left: 90px;
 }
 
 #picsum:hover{
@@ -230,7 +231,7 @@ textarea:focus {
 
 
 
-input[type=submit] {
+input[type=submitt] {
   background: #000000;
   padding: 8px 16px;
   color: white;
@@ -240,12 +241,15 @@ input[type=submit] {
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.9);
   cursor: pointer;
+  text-align: center;
   outline: none;
   transition: 0.2s all;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.00), 0 1px 2px rgba(0, 0, 0, 0.00);
+  width:100px;
+ 
 }
 
-input[type=submit]:hover {
+input[type=submitt]:hover {
   margin-top: -1px;
   margin-bottom: 1px;
   background: #ffffff;
@@ -253,13 +257,7 @@ input[type=submit]:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.14);
 }
 
-input[type=submit]:active {
-  background: #00bfa5;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.00), 0 1px 2px rgba(0, 0, 0, 0.00);
 
-}
 
 .error__input {
   border-color: red ;
@@ -272,4 +270,104 @@ input[type=submit]:active {
 #create-resume{
   position: relative;
   left: 48%;
+}
+
+
+/* //second preview */
+
+
+
+
+.resumewrapper{
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ padding-right: 10px;
+ padding-left: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  display: block;
+}
+.pre_elements{
+  text-align: start;
+  font-weight:bold;
+  font-size: 24px;
+ 
+}
+
+#outshow{
+ 
+  border: 1px dashed rgba(0, 0, 0, 0.9);
+  border-radius: 80px;
+  margin-bottom: 10px;
+}
+
+#nameshow{
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+#addressshow{
+  font-size: 20px;
+}
+
+#phoneshow{
+  font-size: 20px;
+}
+
+#emailshow{
+  font-style:20px ;
+}
+
+.mid_header{
+  font-size: 24px;
+
+}
+#aboutshow{
+ 
+  font-style: italic;
+  
+}
+
+#careershow{
+
+}
+
+#edushow{
+
+}
+
+#recentshow, #pastshow, #anotherpastshow,  #positionshow1, #positionshow2, #positionshow3{
+margin-left: 0;  
+font-size: 18px;
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  .pre_elements {
+    font-size: 15px;
+  }
+  #nameshow{
+    font-size: 30px;
+  }
+  #addressshow{
+    font-size: 16px;
+  }
+  #phoneshow{
+    font-size: 16px;
+  }
+  #emailshow{
+    font-size: 16px;
+  }
+  .mid_header{
+    font-size: 20px;
+  
+  }
+  #recentshow, #pastshow, #anotherpastshow,  #positionshow1, #positionshow2, #positionshow3{
+  
+    font-size: 14px;
+    }
 }
